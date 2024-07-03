@@ -1,0 +1,62 @@
+
+
+```{bash}
+# Paso 2
+mkdir tarea
+cd tarea
+
+# Paso 3
+mkdir viajes scrip
+# Paso 4
+cd viajes
+nano destinos.txt
+
+# En nano:
+# París
+# Madrid
+# Tokio
+# Ctrl+X, Y, Enter
+
+# Paso 6
+cat destinos.txt
+
+# Paso 7
+mv destinos.txt ../script/
+cd ../script
+
+# Paso 8
+cp destinos.txt copia_destinos.txt
+
+# Paso 9
+grep "París" copia_destinos.txt
+
+# Paso 10
+ls -l
+
+# Paso 11
+nano presentacion.sh
+
+# En nano:
+#
+# destino_favorito=$(sed -n '1p' destinos.txt)
+# ultimo_lugar=$(sed -n '2p' destinos.txt)
+# lugar_a_visitar=$(sed -n '3p' destinos.txt)
+#
+# echo "Mi destino de viaje favorito es $destino_favorito, el último lugar que visité fue $ultimo_lugar y me gustaría visitar $lugar_a_visitar."
+# Ctrl+X, Y, Enter
+
+# Paso 12
+chmod +x presentacion.sh
+./presentacion.sh
+
+# Paso 13
+alias limpiar='clear'
+
+# Paso 14
+limpiar
+
+# Paso 15
+unalias limpiar
+
+# Paso 16
+tree
