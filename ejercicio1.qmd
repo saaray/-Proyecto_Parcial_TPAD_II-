@@ -1,6 +1,7 @@
 
 
 ```{bash}
+echo hola
 # Paso 2
 mkdir tarea
 cd tarea
