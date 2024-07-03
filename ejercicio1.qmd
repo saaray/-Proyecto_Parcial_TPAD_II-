@@ -1,7 +1,11 @@
 
 
 ```{bash}
-echo hola
+<<<<<<< HEAD
+echo main
+=======
+echo "Rama de cambio"
+>>>>>>> nueva_rama
 # Paso 2
 mkdir tarea
 cd tarea
